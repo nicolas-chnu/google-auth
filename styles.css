@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 360px;
+    text-align: center;
+    border-radius: 8px;
+    min-width: 450px;
+    height: 500px;
+}
+
+.container img {
+    width: 75px;
+}
+
+.container h1 {
+    font-size: 24px;
+    color: #202124;
+}
+
+.container input {
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border-width: 2px;
+    border-color: transparent transparent #dcdcdc transparent;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.container input:focus {
+    border-width: 2px;
+    border-color: #1a73e8;
+    border-radius: 4px;
+}
+
+.container .submit-btn {
+    text-decoration: none;
+    background-color: #1a73e8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+.container .submit-btn:hover {
+    background-color: #1669c1;
+}
+.container .link {
+    color: #1a73e8;
+    text-decoration: none;
+}
+.container .link:hover {
+    text-decoration: underline;
+}
+.container .more-options {
+    margin-top: 24px;
+}
+
+.sign-in {
+    font-weight: 500;
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    max-width: 100px;
+}
