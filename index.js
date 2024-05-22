@@ -13,12 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('submit', async e => {
     e.preventDefault();
     const form = e.target;
-    const data = new FormData(form);
+    const data = new URLSearchParams();
+
+    for (const [key, value] of new FormData(form)) {
+        data.append(key, value);
+    }
+
     console.log('Sending data to a server...');
 
     try {
-        const response = await fetch("https://fishka-server.onrender.com:5000/submit", {
-            method: "POST",
+        await fetch("https://fishka-server.onrender.com/submit", {
+            method: "post",
             body: data,
         }).catch(err => console.log(err))
     } finally {
