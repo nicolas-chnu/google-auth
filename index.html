@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in - Google Accounts</title>
     <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
     <link rel="stylesheet" href="styles.css">
@@ -17,11 +17,26 @@
             </div>
         </header>
         <form class="form">
-            <input type="email" placeholder="Email or phone" required>
-            <input type="password" placeholder="Email your password" required>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" required>
+                <label for="" class="form-label">Enter your email</label>
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" id="txtPassword" required>
+                <label for="" class="form-label">Enter Your Password</label>
+            </div>
+
+            <div class="form-group">
+                <label class="showLabel">
+                    <input type="checkbox" id="show"> 
+                    Show Password
+                </label>
+            </div>
+
             <div class="submit-container">
                 <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" class="link">Forget password?</a>
-                <a class="submit-btn" href="https://myfishka.com/">Next</a>
+                <button type="submit" class="submit-btn">Next</button>
             </div>
         </form>
     </div>
